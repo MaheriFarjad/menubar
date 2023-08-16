@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(Screenshot_8.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .menu-bar {
+            background: rgba(0, 100, 0);
+            text-align: center;
+        }
+
+        .menu-bar ul {
+            display: inline-flex;
+            list-style: none;
+            color: #fff;
+        }
+
+        .menu-bar ul li {
+            width: 120px;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .active,
+        .menu-bar ul li:hover {
+            background-color: #2bab02;
+        }
+
+        .menu-bar .fa {
+            margin-right: 8px;
+        }
+        .sub-menu {
+            display: none;
+
+        }
+       .menu-bar ul li:hover .sub-menu  {
+        display: block;
+        position: absolute;
+        background: rgba(0,100,0);
+        margin-top: 15px;
+        margin-left: 15px;
+        }
+        .sub-menu ul {
+        display: block;
+       
+        }
+        .menu-bar ul li:hover .sub-menu  li{
+            width: 150px;
+       padding: 10px;
+       border-bottom: 1px solid white;
+       background-color: transparent;
+       border-radius: 0;
+       text-align: left;
+        }
+        .sub-menu ul li a:hover{
+            color: #b2ff00;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa-user"></i> About</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-clone"></i> Services</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="">Digital Marketing</a></a> </li>
+                        <li><a href="">Data Research</a> </li>
+                        <li><a href="">Facebook Adwords</a> </li>
+                    </ul>
+                </div></li>
+            <li><a href="#"><i class="fa fa-users"></i> Clients</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="">David</a> </li>
+                        <li><a href="">William</a> </li>
+                        <li><a href="">Eitan</a> </li>
+                    </ul>
+                </div></li>
+            <li><a href="#"><i class="fa fa-angellist"></i> Investors</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="">Angle Investors</a> </li>
+                        <li><a href="">VC Investors</a> </li>
+                        <li><a href="">Seed1,Seed2,</a> </li>
+                    </ul>
+                </div></li>
+            <li><a href="#"><i class="fa fa-inr"></i> Pricing</a></li>
+            <li><a href="#"><i class="fa fa-edit"></i> Training</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="">Consulting</a> </li>
+                        <li> <a href="">Consulting</a></li>
+                        <li><a href="">Consulting</a> </li>
+                    </ul>
+                </div></li>
+            <li><a href="#"><i class="fa fa-home"></i> Contact</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
